@@ -39,6 +39,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
+
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link text-primary" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -69,6 +70,10 @@
                         <ul class="nav justify-content-left">
                             <li class="nav-item">
                                 <a class="nav-link text-primary" href="/movieAdmin/create">Add Movie</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="{{ url('/register') }}">Register</a>
                             </li>
 
                             <li class="nav-item">
